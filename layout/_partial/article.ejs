@@ -5,7 +5,7 @@
     </a>
     <span class="split"></span>
     <span class="title"><%= page.title %></span>
-    <% if (!config.hidden_date) { %>
+    <% if (!config.hidden_date && !theme.hidden_date) { %>
       <span class="date" id="title-date">
         <i class="fa fa-clock-o"></i> 
         <%= page.date.format(config.date_format) %>
